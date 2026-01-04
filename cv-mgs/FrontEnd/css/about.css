@@ -11,8 +11,8 @@
     }
 .card{
     width: 80vw;
-    height: 85vh;
-    margin-top: 5vh;
+    height: 70vh;
+    margin-top: -5vh;
     background-color: #8fb6c860;
     border-radius: 30px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .5);
