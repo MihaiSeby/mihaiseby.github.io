@@ -193,14 +193,17 @@ nav{
 }
 
 @media (max-width: 500px){
-    .content-title h1{
-        font-size: 24px;
+    .main{
+        justify-content: flex-start;
     }
-    span{
+    .content-title h1{
         font-size: 28px;
     }
+    span{
+        font-size: 30px;
+    }
     .subtitle h2{
-        font-size: 20px;
+        font-size: 26px;
     }
     .subtitle{
         width: auto;
@@ -210,7 +213,7 @@ nav{
         display: none;
     }
     .desc h3{
-        font-size: 12px;
+        font-size: 20px;
         width: 85vw;
     }
 }
