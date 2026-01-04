@@ -126,6 +126,9 @@
     margin-top: 0; 
   }
   .basic-info-wrap h1{
+    font-size: 26px;
+  }
+  .basic-info-wrap span{
     font-size: 28px;
   }
   .basic-info-wrap p{
