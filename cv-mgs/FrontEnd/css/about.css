@@ -12,7 +12,7 @@
 .card{
     width: 80vw;
     height: 85vh;
-    margin-top: -15vh;
+    margin-top: 5vh;
     background-color: #8fb6c860;
     border-radius: 30px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .5);
@@ -56,6 +56,9 @@
         .edu{
             display: flex;
             gap: 5vw; 
+        }
+        .edu-mobile{
+            display: none;
         }
         .box{
             width: 30vw;
@@ -113,16 +116,13 @@
 }
 
 @media (max-width: 500px){
-  .basic-info,
-  .education,
-  .work{
+  .basic-info{
     max-height: 80dvh;
     overflow-y: auto;
     justify-content: flex-start;
   }
 
-  .basic-info-wrap,
-  .edu-wrap{
+  .basic-info-wrap{
     margin-top: 0; 
   }
   .basic-info-wrap h1{
@@ -134,4 +134,26 @@
   .basic-info-wrap p{
     width: 70vw;
   }
+  .education{
+    margin-top: -5vh;
+  }
+  .edu{
+    display: none;
+  }
+  .edu-wrap h1{
+    font-size: 26px;
+  }
+  .edu-mobile{
+    display: block;
+  }
+    .edu-mobile-wrap{
+        max-height: 35dvh;
+        overflow-y: auto;
+    }
+        .edu-mobile-wrap h5{
+            font-size: 12px;
+        }
+    .btns-about{
+        gap: 1rem;
+    }
 }
