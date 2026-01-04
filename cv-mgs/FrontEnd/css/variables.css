@@ -1,0 +1,13 @@
+:root {
+  /* Culori de baza */
+
+  --black: #303030;
+  --white: #D9D9D9;
+  --light-accent: #8FB6C8;
+  --dark-accent: #79ABBA;
+
+  /* Alb Negru */
+  --pure-black: #000;
+  --pure-white: #fff;
+  --light-gray:#c4c4c4;
+}

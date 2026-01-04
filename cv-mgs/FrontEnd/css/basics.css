@@ -1,0 +1,68 @@
+@import url(/FrontEnd/css/variables.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Arial', sans-serif;
+    background-color: var(--black);
+    color: var(--pure-white);
+    line-height: 1.6;
+    overflow: hidden;
+}
+
+h1, h2, h3{
+    font-weight: 600;
+    color: var(--pure-white);
+}
+
+h1{
+    font-size: 36px;
+    text-shadow: 2px 2px 5px var(--dark-accent);
+}
+
+p{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--pure-white);
+    cursor: pointer;
+}
+
+a:hover{
+    color: var(--light-accent);
+    cursor: pointer;
+}
+
+span{
+    font-weight: 600;
+    font-size: 40px;
+    color: var(--light-accent);
+}
+
+button{
+    width: 140px;
+    height: 40px;
+    background-color: var(--light-accent);
+    border: #00000000;
+    border-radius: 60px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .3);
+}
+
+button:hover{
+    background-color: #00000000;
+    border: 2px solid var(--dark-accent);
+    color: var(--pure-white);
+    transition: all 0.8s ease;
+}
+
+.active{
+    color: var(--light-accent);
+}
