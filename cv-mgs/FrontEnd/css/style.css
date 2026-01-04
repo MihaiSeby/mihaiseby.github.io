@@ -228,7 +228,6 @@ nav {
   gap: 3rem;
 }
 
-/* Close button (X) inside modal */
 .nav-close {
   font-size: 34px;
   line-height: 1;
@@ -238,7 +237,6 @@ nav {
   cursor: pointer;
 }
 
-/* In modal: stack links vertically */
 .nav-overlay .nav-links {
   flex-direction: column;
   align-items: center;
@@ -256,9 +254,6 @@ nav {
   font-size: 24px;
 }
 
-/* =========================
-   RESPONSIVE BREAKPOINTS
-   ========================= */
 @media (max-width: 1400px) {
   .picture {
     display: none;
@@ -327,7 +322,7 @@ nav {
   }
 
   .main-content {
-    margin-left: 10vw;
+    margin-left: 5vw;
   }
 
   .content-title h1 {
