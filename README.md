@@ -16,4 +16,6 @@ HTML5 – structură semantică CSS3 – stilizare și responsive design JavaScr
 
 Autor
 
-Mihai Gabriel Sebastian Student – Informatică Economică (ASE CSIE) 📧 Email: mihaigsebi@gmail.com 🌐 GitLab: https://gitlab.com/dashboard/home
+Mihai Gabriel Sebastian Student – Informatică Economică (ASE CSIE) 
+📧 Email: mihaigsebi@gmail.com 
+🌐 GitLab: https://gitlab.com/dashboard/home
