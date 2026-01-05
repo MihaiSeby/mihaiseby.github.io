@@ -1,7 +1,7 @@
 @import url(/cv-mgs/FrontEnd/css/variables.css);
 @import url(/cv-mgs/FrontEnd/css/basics.css);
 
-nav {
+nav{
   position: sticky;
   top: 0;
   width: 100%;
@@ -9,7 +9,7 @@ nav {
   z-index: 50;
 }
 
-.nav-wrap {
+.nav-wrap{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -19,7 +19,7 @@ nav {
   padding: 0.5rem 2rem;
 }
 
-.nav-links-holder {
+.nav-links-holder{
   display: flex;
   align-items: center;
   gap: 3rem;
