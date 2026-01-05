@@ -1,6 +1,7 @@
 .main-about{
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100vw;
     min-height: 95vh;
     height: auto;
@@ -47,8 +48,8 @@
     display: flex;
     justify-content: center;
     overflow: auto;
-    scrollbar-width: none;
-    height: 70vh;
+    min-height: 70vh;
+    height: auto;
 }
     .edu-wrap{
         display: flex;
@@ -116,7 +117,7 @@
 .hidden{
     opacity: 0;
     pointer-events: none;
-    position: relative;
+    position: absolute;
 }
 
 @media (max-width: 500px){
