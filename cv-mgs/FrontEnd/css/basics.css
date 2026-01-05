@@ -12,7 +12,9 @@ body{
     background-color: var(--black);
     color: var(--pure-white);
     line-height: 1.6;
-    overflow: hidden;
+    height: auto;
+    min-height: 100%;
+    overflow-y: auto;
 }
 
 h1, h2, h3{
