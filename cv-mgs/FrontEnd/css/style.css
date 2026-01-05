@@ -5,7 +5,7 @@ nav {
   position: sticky;
   top: 0;
   width: 100%;
-  background-color: var(--black);
+  background-color: #00000000;
   z-index: 50;
 }
 
@@ -151,7 +151,7 @@ nav {
 }
 
 .me {
-  width: min(70vw, 450px);
+  width: min(70vw, 600px);
   height: auto;
   max-height: 85vh;
   object-fit: contain;

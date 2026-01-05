@@ -1,0 +1,52 @@
+.background{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #1f1f1f 100%);
+    overflow: hidden;
+}
+.gradient-overlay{
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: 
+        radial-gradient(circle at 20% 50%, rgba(52, 152, 219, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(41, 128, 185, 0.08) 0%, transparent 50%);
+    animation: moveGradient 20s ease-in-out infinite;
+}
+
+@keyframes moveGradient{
+    0%, 100%{
+        transform: translate(0, 0);
+    }
+    50%{
+        transform: translate(-50px, -50px);
+    }
+}
+
+.particle{
+    position: absolute;
+    background: rgba(52, 152, 219, 0.6);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.grid{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(rgba(52, 152, 219, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(52, 152, 219, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: gridMove 30s linear infinite;
+}
+
+@keyframes gridMove{
+    0%{
+        transform: translate(0, 0);
+    }
+    100%{
+        transform: translate(50px, 50px);
+    }
+}

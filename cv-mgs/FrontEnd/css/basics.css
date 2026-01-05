@@ -9,8 +9,8 @@
 
 body{
     font-family: 'Arial', sans-serif;
-    background-color: var(--black);
     color: var(--pure-white);
+    background-color: #2d2d2d;
     line-height: 1.6;
     height: auto;
     min-height: 100%;
@@ -68,4 +68,17 @@ button:hover{
 
 .active{
     color: var(--light-accent);
+}
+
+
+.content-page{
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    text-align: center;
 }

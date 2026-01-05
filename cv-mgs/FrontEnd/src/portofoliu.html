@@ -7,14 +7,38 @@
     <link rel="icon" type="image/x-icon" href="/cv-mgs/FrontEnd/assets/home_page/logo.png">
     <link rel="stylesheet" href="/cv-mgs/FrontEnd/css/style.css">
     <link rel="stylesheet" href="/cv-mgs/FrontEnd/css/portofoliu.css">
+    <link rel="stylesheet" href="/cv-mgs/FrontEnd/css/background.css">
 </head>
 <body>
-    <nav>
-        <div class="nav-wrap">
-            <a href="/index.html">
-                <img src="/cv-mgs/FrontEnd/assets/home_page/logo.png" alt="LOGO" class="logo">
-            </a>
-            <div class="nav-links-holder">
+    <div class="background">
+        <div class="grid"></div>
+        <div class="gradient-overlay"></div>
+    </div>
+    <section class="content-page">
+        <nav>
+            <div class="nav-wrap">
+                <a href="/index.html">
+                    <img src="/cv-mgs/FrontEnd/assets/home_page/logo.png" alt="LOGO" class="logo">
+                </a>
+                <div class="nav-links-holder">
+                    <div class="nav-links">
+                        <a href="/index.html" class="nav-link"><h4>Home</h4></a>
+                        <a href="/cv-mgs/FrontEnd/src/about.html" class="nav-link"><h4>About</h4></a>
+                        <a href="/cv-mgs/FrontEnd/src/portofoliu.html" class="nav-link active"><h4>Portofolio</h4></a>
+                        <a href="/cv-mgs/FrontEnd/src/contact.html" class="nav-link"><h4>Contact</h4></a>
+                    </div>
+                </div>
+                <button class="nav-burger" id="nav-burger" aria-label="Open menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+        <div class="nav-backdrop" id="nav-backdrop"></div>
+        <div class="nav-overlay" id="nav-overlay" aria-hidden="true">
+            <div class="nav-modal" id="nav-menu">
+                <button class="nav-close" id="nav-close" aria-label="Close menu">×</button>
                 <div class="nav-links">
                     <a href="/index.html" class="nav-link"><h4>Home</h4></a>
                     <a href="/cv-mgs/FrontEnd/src/about.html" class="nav-link"><h4>About</h4></a>
@@ -22,59 +46,43 @@
                     <a href="/cv-mgs/FrontEnd/src/contact.html" class="nav-link"><h4>Contact</h4></a>
                 </div>
             </div>
-            <button class="nav-burger" id="nav-burger" aria-label="Open menu" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
         </div>
-    </nav>
-    <div class="nav-backdrop" id="nav-backdrop"></div>
-    <div class="nav-overlay" id="nav-overlay" aria-hidden="true">
-        <div class="nav-modal" id="nav-menu">
-            <button class="nav-close" id="nav-close" aria-label="Close menu">×</button>
-            <div class="nav-links">
-                <a href="/index.html" class="nav-link"><h4>Home</h4></a>
-                <a href="/cv-mgs/FrontEnd/src/about.html" class="nav-link"><h4>About</h4></a>
-                <a href="/cv-mgs/FrontEnd/src/portofoliu.html" class="nav-link active"><h4>Portofolio</h4></a>
-                <a href="/cv-mgs/FrontEnd/src/contact.html" class="nav-link"><h4>Contact</h4></a>
-            </div>
-        </div>
-    </div>
-    <section class="hero main">
-        <div class="hero-wrap">
-            <h1><span>Portofolio</span></h1>
-            <div class="project-wrap">
-                <button class="short" id="btn5">
-                    <img src="/cv-mgs/FrontEnd/assets/arrow.svg" alt="" class="arrow">
-                </button>
-                <div class="projects">
-                    <div class="first-project nothidden" id="first-project">
-                        <div class="project">
-                            <h4>This project is a website concept designed in Figma, created to showcase the artistic work of an independent artist. The design focuses on simplicity and clarity, using an airy layout, carefully chosen typography, and an intuitive user experience to highlight the artwork. The project is currently in the design stage, prepared for future web implementation.</h4>
-                            <img src="/cv-mgs/FrontEnd/assets/DVDG.svg" alt="" class="mockup">
+        <section class="hero main">
+            <div class="hero-wrap">
+                <h1><span>Portofolio</span></h1>
+                <div class="project-wrap">
+                    <button class="short" id="btn5">
+                        <img src="/cv-mgs/FrontEnd/assets/arrow.svg" alt="" class="arrow">
+                    </button>
+                    <div class="projects">
+                        <div class="first-project nothidden" id="first-project">
+                            <div class="project">
+                                <h4>This project is a website concept designed in Figma, created to showcase the artistic work of an independent artist. The design focuses on simplicity and clarity, using an airy layout, carefully chosen typography, and an intuitive user experience to highlight the artwork. The project is currently in the design stage, prepared for future web implementation.</h4>
+                                <img src="/cv-mgs/FrontEnd/assets/DVDG.svg" alt="" class="mockup">
+                            </div>
+                        </div>
+                        <div class="second-project ascuns" id="second-project">
+                            <div class="project">
+                                <h4>This project is a website redesign concept created in Figma for the high school I graduated from. The goal was to modernize the visual identity and improve content structure and user experience. Due to an unfavorable timing, as the project was started before my final high school exams, the design was not implemented. However, the concept remains relevant and there is a strong possibility that it will be developed and launched in the future.</h4>
+                                <img src="/cv-mgs/FrontEnd/assets/LGRCAT.svg" alt="" class="mockup">
+                            </div>
+                        </div>
+                        <div class="third-project ascuns" id="third-project">
+                            <div class="project">
+                                <h4>This project is a Tic-Tac-Toe game concept designed in Figma, currently in the design stage. The focus was on creating a clean, modern, and intuitive interface, with a clear game board layout and visual feedback for user interactions. The design is prepared for future implementation using HTML, CSS, and JavaScript.</h4>
+                                <img src="/cv-mgs/FrontEnd/assets/TicTacToe.svg" alt="" class="mockup">
+                            </div>
                         </div>
                     </div>
-                    <div class="second-project ascuns" id="second-project">
-                        <div class="project">
-                            <h4>This project is a website redesign concept created in Figma for the high school I graduated from. The goal was to modernize the visual identity and improve content structure and user experience. Due to an unfavorable timing, as the project was started before my final high school exams, the design was not implemented. However, the concept remains relevant and there is a strong possibility that it will be developed and launched in the future.</h4>
-                            <img src="/cv-mgs/FrontEnd/assets/LGRCAT.svg" alt="" class="mockup">
-                        </div>
-                    </div>
-                    <div class="third-project ascuns" id="third-project">
-                        <div class="project">
-                            <h4>This project is a Tic-Tac-Toe game concept designed in Figma, currently in the design stage. The focus was on creating a clean, modern, and intuitive interface, with a clear game board layout and visual feedback for user interactions. The design is prepared for future implementation using HTML, CSS, and JavaScript.</h4>
-                            <img src="/cv-mgs/FrontEnd/assets/TicTacToe.svg" alt="" class="mockup">
-                        </div>
-                    </div>
+                    <button class="short" id="btn6">
+                        <img src="/cv-mgs/FrontEnd/assets/arrowb.svg" alt="" class="arrow">
+                    </button>
                 </div>
-                <button class="short" id="btn6">
-                    <img src="/cv-mgs/FrontEnd/assets/arrowb.svg" alt="" class="arrow">
-                </button>
             </div>
-        </div>
+        </section>
     </section>
     <script src="/cv-mgs/FrontEnd/js/portofolio.js"></script>
     <script src="/cv-mgs/FrontEnd/js/navbar.js"></script>
+    <script src="/cv-mgs/FrontEnd/js/background.js"></script>
 </body>
 </html>

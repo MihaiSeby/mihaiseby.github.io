@@ -6,14 +6,38 @@
     <title>CV-MihaiGSebi</title>
     <link rel="icon" type="image/x-icon" href="/cv-mgs/FrontEnd/assets/home_page/logo.png">
     <link rel="stylesheet" href="/cv-mgs/FrontEnd/css/style.css">
+    <link rel="stylesheet" href="/cv-mgs/FrontEnd/css/background.css">
 </head>
 <body>
-    <nav>
-        <div class="nav-wrap">
-            <a href="/index.html">
-                <img src="/cv-mgs/FrontEnd/assets/home_page/logo.png" alt="LOGO" class="logo">
-            </a>
-            <div class="nav-links-holder">
+    <div class="background">
+        <div class="grid"></div>
+        <div class="gradient-overlay"></div>
+    </div>
+    <section class="content-page">
+        <nav>
+            <div class="nav-wrap">
+                <a href="/index.html">
+                    <img src="/cv-mgs/FrontEnd/assets/home_page/logo.png" alt="LOGO" class="logo">
+                </a>
+                <div class="nav-links-holder">
+                    <div class="nav-links">
+                        <a href="/index.html" class="nav-link active"><h4>Home</h4></a>
+                        <a href="/cv-mgs/FrontEnd/src/about.html" class="nav-link"><h4>About</h4></a>
+                        <a href="/cv-mgs/FrontEnd/src/portofoliu.html" class="nav-link"><h4>Portofolio</h4></a>
+                        <a href="/cv-mgs/FrontEnd/src/contact.html" class="nav-link"><h4>Contact</h4></a>
+                    </div>
+                </div>
+                <button class="nav-burger" id="nav-burger" aria-label="Open menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+        <div class="nav-backdrop" id="nav-backdrop"></div>
+        <div class="nav-overlay" id="nav-overlay" aria-hidden="true">
+            <div class="nav-modal" id="nav-menu">
+                <button class="nav-close" id="nav-close" aria-label="Close menu">×</button>
                 <div class="nav-links">
                     <a href="/index.html" class="nav-link active"><h4>Home</h4></a>
                     <a href="/cv-mgs/FrontEnd/src/about.html" class="nav-link"><h4>About</h4></a>
@@ -21,68 +45,52 @@
                     <a href="/cv-mgs/FrontEnd/src/contact.html" class="nav-link"><h4>Contact</h4></a>
                 </div>
             </div>
-            <button class="nav-burger" id="nav-burger" aria-label="Open menu" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
         </div>
-    </nav>
-    <div class="nav-backdrop" id="nav-backdrop"></div>
-    <div class="nav-overlay" id="nav-overlay" aria-hidden="true">
-        <div class="nav-modal" id="nav-menu">
-            <button class="nav-close" id="nav-close" aria-label="Close menu">×</button>
-            <div class="nav-links">
-                <a href="/index.html" class="nav-link active"><h4>Home</h4></a>
-                <a href="/cv-mgs/FrontEnd/src/about.html" class="nav-link"><h4>About</h4></a>
-                <a href="/cv-mgs/FrontEnd/src/portofoliu.html" class="nav-link"><h4>Portofolio</h4></a>
-                <a href="/cv-mgs/FrontEnd/src/contact.html" class="nav-link"><h4>Contact</h4></a>
-            </div>
-        </div>
-    </div>
 
-    <section class="main">
-        <div class="main-content">
-            <div class="content">
-                <div class="content-title">
-                    <h1><span>E</span>levating <span>B</span>rands,</h1>
-                    <h1 class="desc"><span>T</span>hrough <span>W</span>eb <span>E</span>xcellence.</h1>
-                </div>
-                <div class="picture">
-                    <img src="/cv-mgs/FrontEnd/assets/home_page/me.png" alt="me" class="me">
-                </div>
-                <div class="content-details">
-                    <div class="subtitle">
-                        <h2>Mihai Gabriel Sebastian</h2>
-                        <hr class="linie">
+        <section class="main">
+            <div class="main-content">
+                <div class="content">
+                    <div class="content-title">
+                        <h1><span>E</span>levating <span>B</span>rands,</h1>
+                        <h1 class="desc"><span>T</span>hrough <span>W</span>eb <span>E</span>xcellence.</h1>
                     </div>
-                    <div class="desc">
-                        <h3><span>As</span> a dedicated web developer, I thrive on crafting elegant solutions and creating seamless user experiences through code, design, and innovation. Let's build something amazing together.</h3>
+                    <div class="picture">
+                        <img src="/cv-mgs/FrontEnd/assets/home_page/me.png" alt="me" class="me">
                     </div>
-                    <div class="socials-main">
-                        <div class="socials-wrap">
-                            <a href="https://www.instagram.com/seby.mihay/" class="socials" target="_blanck">
-                                <img src="/cv-mgs/FrontEnd/assets/home_page/instagram.svg" alt="Instagram">
-                            </a>
-                            <div class="socials" id="email-btn">
-                                <img src="/cv-mgs/FrontEnd/assets/home_page/email.svg" alt="Mail">
-                            </div>
-                            <a href="https://www.facebook.com/profile.php?id=100091904871939" class="socials" target="_blanck">
-                                <img src="/cv-mgs/FrontEnd/assets/home_page/facebook.svg" alt="Facebook">
-                            </a>
-                            <a href="https://www.linkedin.com/in/gabriel-sebastian-mihai-698025373/" class="socials" target="_blanck">
-                                <img src="/cv-mgs/FrontEnd/assets/home_page/linkedin.svg" alt="LinkedIn">
-                            </a>
+                    <div class="content-details">
+                        <div class="subtitle">
+                            <h2>Mihai Gabriel Sebastian</h2>
+                            <hr class="linie">
                         </div>
-                        <div class="email-poup pop" id="email">
-                            <h4>mihaigsebi@gmail.com</h4>
+                        <div class="desc">
+                            <h3><span>As</span> a dedicated web developer, I thrive on crafting elegant solutions and creating seamless user experiences through code, design, and innovation. Let's build something amazing together.</h3>
+                        </div>
+                        <div class="socials-main">
+                            <div class="socials-wrap">
+                                <a href="https://www.instagram.com/seby.mihay/" class="socials" target="_blanck">
+                                    <img src="/cv-mgs/FrontEnd/assets/home_page/instagram.svg" alt="Instagram">
+                                </a>
+                                <div class="socials" id="email-btn">
+                                    <img src="/cv-mgs/FrontEnd/assets/home_page/email.svg" alt="Mail">
+                                </div>
+                                <a href="https://www.facebook.com/profile.php?id=100091904871939" class="socials" target="_blanck">
+                                    <img src="/cv-mgs/FrontEnd/assets/home_page/facebook.svg" alt="Facebook">
+                                </a>
+                                <a href="https://www.linkedin.com/in/gabriel-sebastian-mihai-698025373/" class="socials" target="_blanck">
+                                    <img src="/cv-mgs/FrontEnd/assets/home_page/linkedin.svg" alt="LinkedIn">
+                                </a>
+                            </div>
+                            <div class="email-poup pop" id="email">
+                                <h4>mihaigsebi@gmail.com</h4>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </section>
     <script src="/cv-mgs/FrontEnd/js/home-page.js"></script>
     <script src="/cv-mgs/FrontEnd/js/navbar.js"></script>
+    <script src="/cv-mgs/FrontEnd/js/background.js"></script>
 </body>
 </html>
