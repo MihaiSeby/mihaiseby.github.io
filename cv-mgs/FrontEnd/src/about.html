@@ -14,8 +14,11 @@
         <div class="grid"></div>
         <div class="gradient-overlay"></div>
     </div>
+    <div class="loader-wrap">
+        <span class="loader"></span>
+    </div>
     <section class="content-page">
-        <nav>
+        <nav id="nav">
             <div class="nav-wrap">
                 <a href="/index.html">
                     <img src="/cv-mgs/FrontEnd/assets/home_page/logo.png" alt="LOGO" class="logo">
@@ -51,8 +54,8 @@
             <div class="main-wrap">
                 <div class="basic-info card revealed" id="card1">
                     <div class="basic-info-wrap">
-                        <h1><span>M</span>ihai <span>G</span>abriel <span>S</span>ebastian</h1>
-                        <div>
+                        <h1 id="title"><span>M</span>ihai <span>G</span>abriel <span>S</span>ebastian</h1>
+                        <div class="text-about" id="text">
                             <p>I am a student with a strong interest in technology and web development, currently at the beginning of my journey in the field, but highly motivated to grow and build a solid career as a web developer. I chose to present my CV as a web page because I believe this format best reflects my practical skills, my mindset, and my willingness to learn through real projects rather than relying solely on traditional documents.</p>
                             <p>At the moment, I am focused on developing my front-end skills, working with technologies such as HTML, CSS, and JavaScript to create clean, responsive, and user-friendly interfaces. I pay close attention to structure, layout, and user experience, aiming to understand how design and functionality work together to deliver clear and intuitive digital solutions.</p>
                             <p>I strongly believe that continuous learning is essential in the tech industry. For this reason, I actively seek opportunities to improve my knowledge, experiment with new ideas, and better understand how things work behind the scenes. This web-based CV represents not only a personal introduction, but also a reflection of my learning process and professional mindset. It serves as a starting point in my development as a web developer, highlighting my commitment to growth, consistency, and hands-on experience.</p>
@@ -65,19 +68,19 @@
                         <h1><span>E</span>ducation</h1>
                         <div class="edu-mobile">
                             <div class="edu-mobile-wrap">
-                                <h5>I graduated from “Timotei Cipariu” Greek-Catholic High School in Bucharest, where I built a strong foundation in mathematics and computer science while developing logical thinking, discipline, and independent learning skills. I am currently a student at the Bucharest University of Economic Studies, within the Faculty of Cybernetics, Statistics and Economic Informatics, majoring in Economic Informatics. Through my academic journey, I am strengthening my programming, data analysis, and algorithmic thinking abilities, while gaining a clear understanding of how technology integrates with business and economic processes. In parallel, I focus on developing my front-end skills using HTML, CSS, and JavaScript, along with learning UX principles and responsive design, aiming to continuously improve and build a solid professional profile in the IT field.</h5>
+                                <h4>Through my academic journey, I am strengthening my programming, data analysis, and algorithmic thinking abilities, while gaining a clear understanding of how technology integrates with business and economic processes. In parallel, I focus on developing my front-end skills using HTML, CSS, and JavaScript, along with learning UX principles and responsive design, aiming to continuously improve and build a solid professional profile in the IT field.</h4>
                             </div>
                         </div>
                         <div class="edu">
                             <div class="high-school box">
-                                <h2>LGRCAT</h2>
-                                <h5>I graduated from Liceul Greco-Catolic “Timotei Cipariu”, where I built a strong foundation in mathematics and computer science. During this period, I developed logical thinking, discipline, self-learning abilities, responsibility, and perseverance skills that support my growth and consistency as an aspiring web developer.</h5>
-                                <a href="https://www.lgrcat.ro/" target="_blank"><button><h4>Go to LGRCAT</h4></button></a>
+                                <a href="https://www.lgrcat.ro/" target="_blank"><h2>"Timotei Cipariu" Greek-Catholic High School</h2></a>
+                                <p>September 2021 - June 2025</p>
+                                <h4>I graduated from "Timotei Cipariu" Greek-Catholic High School, where I built a strong foundation in mathematics and computer science. During this period, I developed logical thinking, discipline, self-learning abilities, responsibility, and perseverance skills that support my growth and consistency as an aspiring web developer.</h4>
                             </div>
                             <div class="uni box">
-                                <h2>ASE-CSIE-IE</h2>
-                                <h5>I am currently a student at ASE, Faculty of Cybernetics, Statistics and Economic Informatics (CSIE), majoring in Economic Informatics. Through this program, I am developing analytical thinking, programming skills, data analysis capabilities, and a strong understanding of how technology integrates with business processes and real-world economic systems.</h5>
-                                <a href="https://csie.ase.ro/" target="_blank"><button><h4>Go to my uni</h4></button></a>
+                                <a href="https://csie.ase.ro/" target="_blank"><h2>ASE-CSIE-IE</h2></a>
+                                <p>October 2025 - present</p>
+                                <h4>I am currently a student at ASE, Faculty of Cybernetics, Statistics and Economic Informatics (CSIE), majoring in Economic Informatics. Through this program, I am developing analytical thinking, programming skills, data analysis capabilities, and a strong understanding of how technology integrates with business processes and real-world economic systems.</h4>
                             </div>
                         </div>
                         <div class="btns-about">
@@ -123,5 +126,6 @@
     <script src="/cv-mgs/FrontEnd/js/about.js"></script>
     <script src="/cv-mgs/FrontEnd/js/navbar.js"></script>
     <script src="/cv-mgs/FrontEnd/js/background.js"></script>
+    <script src="/cv-mgs/FrontEnd/js/about-animations.js"></script>
 </body>
 </html>

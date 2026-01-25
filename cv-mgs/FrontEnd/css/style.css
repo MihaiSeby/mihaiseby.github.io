@@ -1,5 +1,6 @@
-@import url(/cv-mgs/FrontEnd/css/variables.css);
-@import url(/cv-mgs/FrontEnd/css/basics.css);
+@import url(./variables.css);
+@import url(./basics.css);
+@import url(./loader.css);
 
 nav{
   position: sticky;
@@ -7,6 +8,15 @@ nav{
   width: 100%;
   background-color: #00000000;
   z-index: 50;
+  height: 10vh;
+
+  opacity: 0;
+  transform: translateY(-10vh);
+  transition: opacity 2s ease, transform 1s ease;
+}
+nav.visible{
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .nav-wrap{
@@ -58,7 +68,7 @@ nav{
 .content {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .content-title {
@@ -66,6 +76,14 @@ nav{
   flex-direction: column;
   margin-left: -5vw;
   width: 500px;
+
+  opacity: 0;
+  transform: translateX(-40vw);
+  transition: opacity 1s ease, transform 2s ease;
+}
+.content-title.visible {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .desc {
@@ -94,6 +112,14 @@ nav{
   flex-direction: column;
   gap: 2rem;
   margin-left: 10vw;
+
+  opacity: 0;
+  transform: translateX(40vw);
+  transition: opacity 1s ease, transform 2s ease;
+}
+.content-details.visible{
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .subtitle {
