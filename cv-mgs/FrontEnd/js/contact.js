@@ -12,15 +12,22 @@ window.addEventListener("load", () => {
             loader.remove();
 
             const nav = document.getElementById("nav");
-            const title = document.getElementById("title");
+            const h1 = document.getElementById("h1");
             const text = document.getElementById("text");
-            const btn = document.getElementById("btn1");
-            const elements = [nav, title, text, btn];
+            const socials = document.getElementById("socials");
+            const elements = [nav, h1, text, socials];
             elements.forEach((el, index) => {
                 setTimeout(() => {
                     el.classList.add("visible");
-                }, index * 500); //ms
+                }, index * 600); //ms
             });
         }, 700);
     }, MIN_DURATION);
+});
+
+const pop = document.getElementById("email");
+const btn = document.getElementById("email-btn");
+
+btn.addEventListener("click", () => {
+  pop.classList.toggle("pop");
 });

@@ -127,19 +127,23 @@
         align-items: center;
         gap: 5vh;
     }
+    .work-text{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
         .work-text p{
             color: #8aa9b8;
             text-indent: 5%;
             width: 30vw;
         }
-        .work-text .ul{
-            margin-left: 8%;
-        }
-
 .btns-about{
     display: flex;
     gap: 10vw;
     margin-top: 5vh;
+    margin-left: 0;
 }
 
 
@@ -212,13 +216,6 @@
         height: auto;
         margin-top: -30vh;
     }
-        .work-text{
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
         .btns{
             margin: 0;
             gap: 1rem;
